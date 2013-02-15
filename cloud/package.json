@@ -1,5 +1,6 @@
 {
   "name" : "FH-Test-App",
+  "version": "0.8.0",
   "description" : "A FeedHenry Sample Application",
   "homepage" : "",
   "keywords" : ["FeedHenry", "Sample"],
@@ -13,6 +14,5 @@
   "dependencies" : {
     "fh-nodeapp": "*"
   },
-  "repository" : {"type": "git", "url": "git@github.com:TinyExplosions/fh-test-app.git"},
-  "version" : "0.8.0"
+  "repository" : {"type": "git", "url": "git@github.com:TinyExplosions/fh-test-app.git"}
 }
