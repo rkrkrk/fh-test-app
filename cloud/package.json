@@ -14,5 +14,5 @@
     "fh-nodeapp": "*"
   },
   "repository" : {"type": "git", "url": "git@github.com:TinyExplosions/fh-test-app.git"},
-  "version" : "0.8"
+  "version" : "0.8.0"
 }
