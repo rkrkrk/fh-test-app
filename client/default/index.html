@@ -1,1 +1,48 @@
+<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<style>
+  body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  }
+</style>
+<link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
 <h1>Hello World</h1>
+<div class="testing"></div>
+<script src="lib/utils.js"></script>
+<script src="lib/jquery-1.9.1.min.js"></script>
+<script src="lib/handlebars.js"></script>
+<script src="lib/app.js"></script>
+<script>
+    //use to simulate offline
+    // Utils.overrideOnline(false);
+    
+    //wait for $fh to be available
+    $fh.ready({}, function(){
+        $(function() {
+            //check if device is online
+            Utils.isOnline(function(online){
+                if(online) {
+                    //if online, initialize app
+                    appInit();
+                } else {
+                    //app isn't online
+                    appOffline();
+                }
+            });
+        });
+    });
+    //add listener for connectionChange
+    document.addEventListener("connectionChange", onConnectionChange, false);
+</script>
+
+
+<script id="entry-template" type="text/x-handlebars-template">
+  <ul class="tweetlist">
+      {{#each tweetlist}}
+        <p>{{text}}}</p>
+      {{/each}}
+  </ul>
+</script>
+
+
+
