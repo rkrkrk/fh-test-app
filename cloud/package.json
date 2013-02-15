@@ -1,0 +1,18 @@
+{
+  "name" : "FH-Test-App",
+  "description" : "A FeedHenry Sample Application",
+  "homepage" : "",
+  "keywords" : ["FeedHenry", "Sample"],
+  "author" : "FeedHenry <support@feedhenry.com>",
+  "contributors" : [
+    {
+      "name": "Al Graham",
+      "email": "alastair.graham@feedhenry.com"
+    }
+  ],
+  "dependencies" : {
+    "fh-nodeapp": "*"
+  },
+  "repository" : {"type": "git", "url": "git@github.com:TinyExplosions/fh-test-app.git"},
+  "version" : "0.8"
+}
