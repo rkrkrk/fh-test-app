@@ -12,7 +12,9 @@
     }
   ],
   "dependencies" : {
-    "fh-nodeapp": "*"
+    "fh-nodeapp": "*",
+    "xml2js" : "0.1.x",
+    "async" :"0.1.x"
   },
   "repository" : {"type": "git", "url": "git@github.com:TinyExplosions/fh-test-app.git"}
 }

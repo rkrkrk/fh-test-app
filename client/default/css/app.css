@@ -1,0 +1,14 @@
+body {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+.avatar {
+    float: left;
+    margin-right: 1em;
+}
+.tweetlist li, .picassalist li {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    list-style-type: none;
+}
+
