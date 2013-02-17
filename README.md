@@ -6,7 +6,7 @@ A Sample Application build using the FeedHenry platform
 To get running you'll need to do the following:
 
 * install node and npm
-* register an account at apps.feedhenry.com/
+* register an account at https://apps.feedhenry.com/
 * install fh-fhc `npm install -g fh-fhc`
 * run the following:
 <pre>
