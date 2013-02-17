@@ -11,11 +11,17 @@ To get running you'll need to do the following:
 * run the following:
 ```
 cd fh-test-app/cloud
+
 npm install .
+
 cd fh-test-app
+
 fhc target https://apps.feedhenry.com
+
 fhc login <your-email-address> <your-password>
+
 fhc apps create TestApp git@github.com:TinyExplosions/fh-test-app.git (keep note of the appid returned)
+
 fhc local
 ```
 
