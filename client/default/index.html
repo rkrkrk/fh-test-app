@@ -8,7 +8,7 @@
   <div class="navbar-inner">
     <div class="container">
       <button type="button" class="refreshButton pull-right btn btn-primary disabled">
-        <span class="icon-repeat icon-white"></span>
+        <i class="icon-repeat icon-white"></i>
       </button> 
       <a class="brand" href="#">Sample Application!</a>
     </div>
@@ -60,7 +60,7 @@
         {{/if}}
         {{#if created_at}}
           <li>
-            <img src="{{profile_image_url}}" class="img-circle avatar" />
+            <a class="tweetlink" href="http://twitter.com/{{from_user}}"><img src="{{profile_image_url}}" class="img-circle avatar" /></a>
             <p>{{text}}}</p>
           </li>
         {{/if}}

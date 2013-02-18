@@ -9,6 +9,12 @@ function appInit() {
         }
         getTweets();
     });
+
+    $(document).on("click", 'a.tweetlink', function(e){
+        e.preventDefault();
+        openWebView($(this).attr('href'));
+    });
+
 }
 
 function appOffline() {
@@ -45,5 +51,24 @@ function onConnectionChange() {
             $('.refreshButton').addClass('disabled');
             appOffline();
         }
+    });
+}
+
+function openWebView(url) {
+    $fh.webview({
+      'act': 'open',
+      'url': url,
+      'title': 'Google'
+    }, function(res) {
+      if (res === "opened") {
+        //webview window is now open
+        alert("window opened");
+      }
+      if (res === "closed") {
+        //webview window is now closed
+        alert("window closed");
+      }
+    }, function(msg, err) {
+      alert(msg);
     });
 }
