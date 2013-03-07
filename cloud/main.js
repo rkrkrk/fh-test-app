@@ -7,7 +7,7 @@ getInfo = function(args, callback){
     console.log("ub getInfo");
     // run getTweets and getPicasaImgs in parallel
     async.parallel([
-      //getTweets,
+      getTweets,
       //getPicasaImgs
     ], function(err,results) {
         var array1 = [], array2 = [], response = {};
