@@ -3,12 +3,11 @@ var xml2js = require('xml2js');
 
 
 //Sample getInfo method that queries Twitter's feed
-getInfo = function(args, callback){
-    console.log("ub getInfo");
+module.exports.getInfo = function(args, callback){
     // run getTweets and getPicasaImgs in parallel
     async.parallel([
       getTweets,
-      //getPicasaImgs
+      getPicasaImgs
     ], function(err,results) {
         var array1 = [], array2 = [], response = {};
         for (var i = 0; i < results.length; i++) {

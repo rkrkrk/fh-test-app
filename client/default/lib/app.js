@@ -1,5 +1,5 @@
 function appInit() {
-    console.log("App Has Started");
+    console.log("App Has Started yo");
     $('.refreshButton').removeClass('disabled');
     getTweets();
 
@@ -17,16 +17,19 @@ function appInit() {
 
 }
 
+
 function appOffline() {
     $('.content').empty().append("<h2>The App appears to be offline</h2>");
 }
 
 function getTweets() {
+    console.log("in getTweets");
     $('.refreshButton').addClass('disabled');
     $fh.act({
         act: "getInfo",
         req: {query: '@feedhenry'}
     }, function(res) {
+        console.log("back from tweets");
         console.log(res);
         displayList(res.result);
         $('.refreshButton').removeClass('disabled');
